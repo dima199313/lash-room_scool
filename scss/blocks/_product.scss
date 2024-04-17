@@ -1,5 +1,10 @@
 .product {
   margin-top: 15px;
+  margin-bottom: 40px;
+  
+}
+.product__inner{
+
 }
 .product__title {
   margin-bottom: 50px;
@@ -10,6 +15,7 @@
 .product__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 40px;
 }
@@ -24,6 +30,10 @@
   width: 350px;
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  img{
+    height: 450px;
+    object-fit: cover;
   }
 }
 .product__text {
