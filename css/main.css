@@ -287,6 +287,10 @@ body {
   font-size: 25px;
 }
 
+.blog {
+  margin-bottom: 150px;
+}
+
 .blog__inner {
   background-color: #d6c9c2;
   padding: 30px;
