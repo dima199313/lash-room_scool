@@ -1,24 +1,25 @@
 .header__top {
-  border: 1px solid green;
+  // border: 1px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
   background-color: $accent-bg;
+  margin-bottom: 50px;
 }
 .logo {
   position: relative;
   text-align: center;
-  font-size: 35px;
+  font-size: 105px;
   font-weight: 500;
 
   &::after {
     content: '';
     position: absolute;
     top: 48%;
-    left: 35%;
+    left: 39%;
     height: 1px;
-    width: 57px;
+    width: 126px;
     background-color: black;
   }
   &__top {
@@ -27,7 +28,6 @@
 }
 
 .header__nav {
-  margin-left: 500px;
 }
 .nav__items {
   display: flex;
@@ -62,4 +62,25 @@
     color: $hover-text;
   }
   width: 40px;
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+}
+.header__img {
+  max-width: 600px;
+}
+.header__content {
+  font-family: $font-basic;
+
+}
+.header__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.header__subtitle {
+}
+.header__link {
 }

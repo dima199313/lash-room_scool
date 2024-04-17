@@ -1,10 +1,11 @@
 .container {
-  border: 1px solid red;
+  // border: 1px solid red;
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
   height: 800px;
 }
-.body {
-  font-size: 14px;
+body {
+  font-size: 20px;
+  background-color: $body-bg;
 }
