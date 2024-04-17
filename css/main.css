@@ -125,6 +125,10 @@ legend {
   margin-bottom: 15px;
 }
 
+.header__nav {
+  margin-left: 500px;
+}
+
 .nav__items {
   display: flex;
   flex-direction: column;
@@ -140,5 +144,19 @@ legend {
   transition: color 0.2s ease;
 }
 .nav__item:hover {
+  color: rgb(213, 0, 251);
+}
+
+.social__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+.bi {
+  transition: color 0.2s ease;
+  width: 40px;
+}
+.bi:hover {
   color: rgb(213, 0, 251);
 }/*# sourceMappingURL=main.css.map */
