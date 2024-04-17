@@ -97,6 +97,19 @@ body {
   background-color: rgba(214, 201, 194, 0.4431372549);
 }
 
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  border: 2px solid #000000;
+  padding: 10px 15px;
+  font-size: 45px;
+  border-radius: 10px;
+  transition: background-color 0.4s ease;
+}
+.btn:hover {
+  background-color: #d6c9c2;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -159,11 +172,12 @@ body {
 
 .header__bottom {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .header__img {
   max-width: 600px;
+  margin-right: 50px;
 }
 
 .header__content {
@@ -174,4 +188,11 @@ body {
   font-size: 50px;
   font-weight: 500;
   line-height: 1.1;
+  margin-bottom: 35px;
+}
+
+.header__subtitle {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 35px;
 }/*# sourceMappingURL=main.css.map */

@@ -9,3 +9,16 @@ body {
   font-size: 20px;
   background-color: $body-bg;
 }
+.btn {
+  font-family: $font-accent;
+  font-weight: 500;
+  border: 2px solid $btn;
+  padding: 10px 15px;
+  font-size: 45px;
+  border-radius: 10px;
+  transition: background-color .4s ease;
+
+  &:hover {
+    background-color: $accent-bg;
+  }
+}
