@@ -110,13 +110,22 @@ body {
   background-color: #d6c9c2;
 }
 
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+
+.header__inner {
+  margin-bottom: 120px;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
   background-color: #d6c9c2;
-  margin-bottom: 50px;
+  margin-bottom: 160px;
 }
 
 .logo {
@@ -172,7 +181,7 @@ body {
 
 .header__bottom {
   display: flex;
-  align-items: start;
+  align-items: end;
 }
 
 .header__img {
@@ -192,7 +201,53 @@ body {
 }
 
 .header__subtitle {
-  font-size: 25px;
-  font-family: "Open Sans", sans-serif;
   margin-bottom: 35px;
+}
+
+.about__inner {
+  font-family: "Open Sans", sans-serif;
+}
+
+.about__title {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.about__text {
+  margin-bottom: 35px;
+}
+
+.about__list {
+  list-style: circle;
+}
+
+.about__list-item {
+  margin-bottom: 20px;
+}
+.about__list-item :last-child {
+  margin-bottom: 0;
+}
+
+.about__inner {
+  font-family: "Open Sans", sans-serif;
+}
+
+.about__title {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.about__text {
+  margin-bottom: 35px;
+}
+
+.about__list {
+  list-style: circle;
+}
+
+.about__list-item {
+  margin-bottom: 20px;
+}
+.about__list-item :last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
