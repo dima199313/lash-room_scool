@@ -29,9 +29,6 @@
     margin-bottom: 15px;
   }
 }
-
-.header__nav {
-}
 .nav__items {
   display: flex;
   flex-direction: column;
@@ -49,15 +46,10 @@
     color: $hover-text;
   }
 }
-
-.social {
-}
 .social__items {
   display: flex;
   flex-direction: column;
   gap: 20px 0;
-}
-.social__item-link {
 }
 .bi {
   transition: color 0.2s ease;

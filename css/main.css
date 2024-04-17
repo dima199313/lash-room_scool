@@ -115,6 +115,10 @@ body {
   font-size: 25px;
 }
 
+.h3-title {
+  font-size: 35px;
+}
+
 .header__inner {
   margin-bottom: 120px;
 }
@@ -202,30 +206,6 @@ body {
 
 .header__subtitle {
   margin-bottom: 35px;
-}
-
-.about__inner {
-  font-family: "Open Sans", sans-serif;
-}
-
-.about__title {
-  font-size: 35px;
-  margin-bottom: 35px;
-}
-
-.about__text {
-  margin-bottom: 35px;
-}
-
-.about__list {
-  list-style: circle;
-}
-
-.about__list-item {
-  margin-bottom: 20px;
-}
-.about__list-item :last-child {
-  margin-bottom: 0;
 }
 
 .about__inner {
