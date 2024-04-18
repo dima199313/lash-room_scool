@@ -23,7 +23,7 @@
     left: 37%;
     height: 1px;
     width: 72px;
-    background-color: black;
+    background-color: $black;
   }
 }
 .footer__logo-top{
@@ -56,7 +56,7 @@
 
 
 .footer__bottom {
-  border-top:1px solid black;
+  border-top:1px solid $black;
   padding: 35px;
 
 }
@@ -68,7 +68,7 @@
 .advertising {
   // background-color:rgb(196, 190, 190);
   padding: 15px;
-  border:2px solid rgb(0, 0, 0);
+  border:$advertising-border;
   border-radius: 15px;
 }
 .h5-title {
@@ -86,7 +86,7 @@
 }
 .advertising__item span {
   &:hover{
-    color: rgb(36, 36, 201)
+    color: $advertising-link
   }
 }
 .copyright {

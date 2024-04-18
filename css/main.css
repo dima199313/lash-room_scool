@@ -271,6 +271,7 @@ body {
 }
 .product__content:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #d6c9c2;
 }
 .product__content img {
   height: 450px;
@@ -421,7 +422,7 @@ body {
 
 .advertising {
   padding: 15px;
-  border: 2px solid rgb(0, 0, 0);
+  border: black;
   border-radius: 15px;
 }
 
