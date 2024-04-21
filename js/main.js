@@ -13,16 +13,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 AOS.init();
 
 //Аккордион
-
-//1. находим все кнопки
 const accordionBtnAll = document.querySelectorAll('.accordion__btn');
-//2. обходим их через forEach
 accordionBtnAll.forEach(item => {
-  //3. вешаем прослушку событий по клику
   item.addEventListener('click', () => {
-    //4. каждой кнопке вешаем переключатель (toggle) active
     item.classList.toggle('accordion__btn-active');
-    //5. каждому контенту вешаем переключатель (toggle) show
     item.nextElementSibling.classList.toggle('accordion__content-show');
   });
 });

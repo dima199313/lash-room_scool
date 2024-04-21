@@ -108,7 +108,7 @@ body {
   background-color: #fff;
 }
 .btn:hover {
-  background-color: #892e3c;
+  background-color: rgba(160, 112, 126, 0.5764705882);
   color: #fff;
 }
 
@@ -269,13 +269,13 @@ body {
 }
 
 .product__content {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
   width: 350px;
 }
 .product__content:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background-color: #e5aab3;
+  box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(160, 112, 126, 0.5764705882);
 }
 .product__content img {
   height: 450px;
@@ -315,14 +315,14 @@ body {
 }
 
 .accordion__btn-active {
-  background-color: #bd8790;
+  background-color: rgba(160, 112, 126, 0.5764705882);
 }
 .accordion__btn-active .accordion__arrow-img {
   transform: rotate(-180deg);
 }
 
 .accordion__btn:hover {
-  background-color: #e5aab3;
+  background-color: rgba(160, 112, 126, 0.3764705882);
 }
 
 .accordion__content {

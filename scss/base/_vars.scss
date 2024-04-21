@@ -1,6 +1,4 @@
 // Fonts
-// font-family: "Open Sans", sans-serif;
-// font-family: "Marck Script", cursive;
 $font-accent: 'Open Sans', sans-serif;
 $font-secondary: 'Marck Script', serif;
 $font-basic: 'Roboto", sans-serif';
@@ -9,24 +7,20 @@ $font-basic: 'Roboto", sans-serif';
 $accent-bg: #cdc9c9;
 $hover-text: #892e3c;
 $body-bg: #ffffff71;
-
 //logo color
 $logo-color:#584245;
-
 //blog
 $blog-bg:#e7e4e4;
 //product
-$card-hover-color:#e5aab3;
+$card-hover-color:#a0707e93;
 // btn
 $btn-color-bg:#fff;
-$btn-hover-bg:#892e3c;
+$btn-hover-bg:#a0707e93;
 $btn-color-text: #fff;
-
 //social-icon
 $instagram-color:#C63DC3;
 $telegram-color:#269DD9;
 $youTube-color:#FF0606;
-
 //setting color
 $white:#ffffff;
 $black: black;
@@ -35,6 +29,6 @@ $advertising-link :rgb(36, 36, 201);
 $advertising-border: black;
 // accordeon color
 $accordion__btn-bg:#f0f0f0;
-$accordion__btn-active:#bd8790;
-$accordion__btn-hover:#e5aab3;
+$accordion__btn-active:#a0707e93;
+$accordion__btn-hover:#a0707e60;
 $accordion__content-bg:#ffffff;
