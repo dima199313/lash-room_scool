@@ -52,10 +52,23 @@
 }
 .bi {
   transition: color 0.2s ease;
-  &:hover {
-    color: $hover-text;
-  }
   width: 40px;
+}
+.bi-telegram{
+  
+  &:hover {
+    color: $telegram-color
+  }
+}
+.bi-instagram{
+  &:hover {
+    color: $instagram-color;
+  }
+}
+.bi-youtube{
+  &:hover {
+    color: $youTube-color;
+  }
 }
 
 .header__bottom {

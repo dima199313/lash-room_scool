@@ -187,8 +187,17 @@ body {
   transition: color 0.2s ease;
   width: 40px;
 }
-.bi:hover {
-  color: #892e3c;
+
+.bi-telegram:hover {
+  color: #269DD9;
+}
+
+.bi-instagram:hover {
+  color: #C63DC3;
+}
+
+.bi-youtube:hover {
+  color: #FF0606;
 }
 
 .header__bottom {
@@ -266,7 +275,7 @@ body {
 }
 .product__content:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background-color: #cdc9c9;
+  background-color: #e5aab3;
 }
 .product__content img {
   height: 450px;
@@ -295,7 +304,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #e7e4e4;
+  background-color: #f0f0f0;
   transition: all 0.3s ease-in;
   font-size: 25px;
 }
@@ -306,14 +315,14 @@ body {
 }
 
 .accordion__btn-active {
-  background-color: #989595;
+  background-color: #bd8790;
 }
 .accordion__btn-active .accordion__arrow-img {
   transform: rotate(-180deg);
 }
 
 .accordion__btn:hover {
-  background-color: #b0b0b0;
+  background-color: #e5aab3;
 }
 
 .accordion__content {
@@ -321,7 +330,7 @@ body {
   font-size: 25px;
   padding: 25px;
   font-family: "Open Sans", sans-serif;
-  background-color: #fafafa;
+  background-color: #ffffff;
 }
 
 .accordeon__strong {
