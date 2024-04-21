@@ -1,5 +1,4 @@
-.header__inner{
-  margin-bottom: 120px;
+.header__inner {
 }
 .header__top {
   // border: 1px solid green;
@@ -8,13 +7,13 @@
   align-items: center;
   padding: 0 15px;
   background-color: $accent-bg;
-  margin-bottom: 160px;
 }
 .logo {
   position: relative;
   text-align: center;
   font-size: 105px;
   font-weight: 500;
+  color:$logo-color;
 
   &::after {
     content: '';
@@ -23,7 +22,7 @@
     left: 39%;
     height: 1px;
     width: 126px;
-    background-color: black;
+    background-color: $logo-color;
   }
   &__top {
     margin-bottom: 15px;
@@ -61,7 +60,9 @@
 
 .header__bottom {
   display: flex;
-  align-items: end;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
 }
 .header__img {
   max-width: 600px;
@@ -79,4 +80,3 @@
 .header__subtitle {
   margin-bottom: 35px;
 }
-

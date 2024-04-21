@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset and base styles  */
 *,
 *::before,
@@ -89,25 +90,26 @@ legend {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
-  height: 800px;
 }
 
 body {
   font-size: 20px;
-  background-color: rgba(214, 201, 194, 0.4431372549);
+  background-color: rgba(255, 255, 255, 0.4431372549);
 }
 
 .btn {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  border: 2px solid #000000;
+  border: 1px solid black;
   padding: 10px 15px;
   font-size: 45px;
   border-radius: 10px;
   transition: background-color 0.4s ease;
+  background-color: #fff;
 }
 .btn:hover {
-  background-color: #d6c9c2;
+  background-color: #892e3c;
+  color: #fff;
 }
 
 .text {
@@ -129,17 +131,12 @@ body {
   display: none;
 }
 
-.header__inner {
-  margin-bottom: 120px;
-}
-
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  background-color: #d6c9c2;
-  margin-bottom: 160px;
+  background-color: #cdc9c9;
 }
 
 .logo {
@@ -147,6 +144,7 @@ body {
   text-align: center;
   font-size: 105px;
   font-weight: 500;
+  color: #584245;
 }
 .logo::after {
   content: "";
@@ -155,7 +153,7 @@ body {
   left: 39%;
   height: 1px;
   width: 126px;
-  background-color: black;
+  background-color: #584245;
 }
 .logo__top {
   margin-bottom: 15px;
@@ -176,7 +174,7 @@ body {
   transition: color 0.2s ease;
 }
 .nav__item:hover {
-  color: #5e5b5b;
+  color: #892e3c;
 }
 
 .social__items {
@@ -190,12 +188,14 @@ body {
   width: 40px;
 }
 .bi:hover {
-  color: #5e5b5b;
+  color: #892e3c;
 }
 
 .header__bottom {
   display: flex;
-  align-items: end;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .header__img {
@@ -216,10 +216,6 @@ body {
 
 .header__subtitle {
   margin-bottom: 35px;
-}
-
-.about {
-  margin-bottom: 100px;
 }
 
 .about__inner {
@@ -246,9 +242,8 @@ body {
   margin-bottom: 0;
 }
 
-.product {
-  margin-top: 15px;
-  margin-bottom: 40px;
+.product__inner {
+  padding: 45px 0;
 }
 
 .product__title {
@@ -271,7 +266,7 @@ body {
 }
 .product__content:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background-color: #d6c9c2;
+  background-color: #cdc9c9;
 }
 .product__content img {
   height: 450px;
@@ -292,12 +287,75 @@ body {
   font-size: 25px;
 }
 
+.accordion {
+  user-select: none;
+}
+
+.accordion__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #e7e4e4;
+  transition: all 0.3s ease-in;
+  font-size: 25px;
+}
+
+.accordion__arrow-img {
+  width: 35px;
+  transition: transform 0.5s;
+}
+
+.accordion__btn-active {
+  background-color: #989595;
+}
+.accordion__btn-active .accordion__arrow-img {
+  transform: rotate(-180deg);
+}
+
+.accordion__btn:hover {
+  background-color: #b0b0b0;
+}
+
+.accordion__content {
+  display: none;
+  font-size: 25px;
+  padding: 25px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fafafa;
+}
+
+.accordeon__strong {
+  font-family: "Marck Script", serif;
+}
+
+.accordion__h4-title {
+  margin-top: 15px;
+}
+
+.accordion__h3-title {
+  text-align: center;
+  margin: 15px 15px;
+}
+
+.accordion__text {
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+.сourse-program {
+  padding: 20px 0;
+}
+
+.accordion__content-show {
+  display: block;
+}
+
 .blog {
-  margin-bottom: 150px;
+  padding: 45px 0;
 }
 
 .blog__inner {
-  background-color: #d6c9c2;
+  background-color: #e7e4e4;
   padding: 30px;
   border-radius: 30px;
 }
@@ -324,7 +382,7 @@ body {
 
 .location__map {
   position: relative;
-  background-color: #d6c9c2;
+  background-color: #cdc9c9;
   width: 100%;
   height: 700px;
   margin-bottom: 50px;
@@ -334,7 +392,7 @@ body {
 .info {
   font-family: "Open Sans", sans-serif;
   position: absolute;
-  background-color: #d6c9c2;
+  background-color: #cdc9c9;
   bottom: 1%;
   left: 10px;
   padding: 20px 20px;
@@ -349,7 +407,7 @@ body {
   font-size: 18px;
 }
 .info p a:hover {
-  color: #5e5b5b;
+  color: #892e3c;
 }
 
 @media (max-width: 658px) {
@@ -374,7 +432,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
-  background-color: #d6c9c2;
+  background-color: #cdc9c9;
   margin-bottom: 0px;
 }
 
@@ -402,7 +460,7 @@ body {
   margin-bottom: 0;
 }
 .footer__nav-item:hover {
-  color: #5e5b5b;
+  color: #892e3c;
 }
 
 .footer__nav-link {
@@ -440,5 +498,5 @@ body {
 }
 
 .advertising__item span:hover {
-  color: #5e5b5b;
+  color: #892e3c;
 }/*# sourceMappingURL=main.css.map */

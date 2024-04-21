@@ -1,0 +1,74 @@
+.accordion{
+  user-select: none;
+}
+.accordion__inner {
+}
+.accordion__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $accordion__btn-bg;
+  transition: all 0.3s ease-in;
+  font-size: 25px;
+
+}
+.accordion__title {
+}
+
+.accordion__arrow-img {
+  width: 35px;
+  transition: transform .5s;
+}
+.accordion__btn-active {
+  background-color: $accordion__btn-active;
+
+  .accordion__arrow-img {
+    transform: rotate(-180deg);
+  }
+}
+.accordion__btn:hover {
+  background-color: $accordion__btn-hover ;
+}
+.accordion__content {
+  display: none;
+  font-size: 25px;
+  padding: 25px;
+  font-family: $font-accent;
+  background-color:$accordion__content-bg;
+}
+
+.accordeon__strong {
+  font-family: $font-secondary;
+}
+.accordion__h4-title{
+  margin-top: 15px;
+}
+.accordion__h3-title{
+  text-align: center;
+  margin: 15px 15px;
+}
+.accordion__text {
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+.сourse-program {
+  padding: 20px 0;
+}
+.course-proglam__list {
+}
+.course-program__step {
+}
+.course-program__step-list {
+}
+.accordion__content-show {
+  display: block;
+}
+
+
+// 
+
+
+
+
+
