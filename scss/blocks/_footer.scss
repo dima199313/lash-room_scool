@@ -54,6 +54,26 @@
 }
 
 
+.online-registration {
+}
+.online-registration__inner {
+}
+.h4-title {
+}
+.online-registration__btn-wrapper {
+  margin-bottom: 9px;
+}
+.online-registration__btn {
+  font-family: $font-accent;
+  padding: 4px;
+  &:hover{
+    color:$hover-text;
+  }
+}
+
+
+
+
 
 .footer__bottom {
   border-top:1px solid $black;

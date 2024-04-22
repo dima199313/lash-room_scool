@@ -341,6 +341,18 @@ body {
   margin-top: 15px;
 }
 
+.accordion__h3--red {
+  color: red;
+}
+
+.accordion__h4--red {
+  color: red;
+}
+
+.accordion__h4--text-center {
+  text-align: center;
+}
+
 .accordion__h3-title {
   text-align: center;
   margin: 15px 15px;
@@ -355,23 +367,66 @@ body {
   padding: 20px 0;
 }
 
+.course-program__step {
+  list-style: circle;
+}
+
 .accordion__content-show {
   display: block;
 }
 
-.blog {
+.services__inner {
   padding: 45px 0;
 }
 
-.blog__inner {
-  background-color: #e7e4e4;
-  padding: 30px;
-  border-radius: 30px;
+.services__title {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.blog__title {
-  text-align: center;
-  margin-bottom: 30px;
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.services__content {
+  display: flex;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  width: 550px;
+}
+.services__content:hover {
+  box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(160, 112, 126, 0.5764705882);
+}
+.services__content img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.services__text {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-up__btn {
+  margin-top: 30px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.sign-up__btn:hover {
+  box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(227, 100, 136, 0.5764705882);
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .location {
@@ -474,6 +529,18 @@ body {
 
 .footer__nav-link {
   font-family: "Open Sans", sans-serif;
+}
+
+.online-registration__btn-wrapper {
+  margin-bottom: 9px;
+}
+
+.online-registration__btn {
+  font-family: "Open Sans", sans-serif;
+  padding: 4px;
+}
+.online-registration__btn:hover {
+  color: #892e3c;
 }
 
 .footer__bottom {

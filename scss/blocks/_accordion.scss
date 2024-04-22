@@ -43,6 +43,17 @@
 .accordion__h4-title{
   margin-top: 15px;
 }
+.h4-title{}
+.h3-title{}
+.accordion__h3--red{
+  color:$red;
+}
+.accordion__h4--red{
+  color:$red;
+}
+.accordion__h4--text-center{
+  text-align: center;
+}
 .accordion__h3-title{
   text-align: center;
   margin: 15px 15px;
@@ -58,8 +69,10 @@
 .course-proglam__list {
 }
 .course-program__step {
+  list-style: circle;
 }
 .course-program__step-list {
+ 
 }
 .accordion__content-show {
   display: block;
