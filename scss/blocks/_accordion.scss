@@ -41,10 +41,13 @@
   font-family: $font-secondary;
 }
 .accordion__h4-title{
-  margin-top: 15px;
+  // margin-top: 15px;
 }
-.h4-title{}
-.h3-title{}
+.h4-title{
+
+}
+.h3-title{
+}
 .accordion__h3--red{
   color:$red;
 }
@@ -56,7 +59,7 @@
 }
 .accordion__h3-title{
   text-align: center;
-  margin: 15px 15px;
+  // margin:15px 15px;
 }
 .accordion__text {
   font-size: 20px;
