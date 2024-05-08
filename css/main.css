@@ -272,7 +272,7 @@ body {
 .product__content {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
-  height: 700px;
+  height: 770px;
   width: 350px;
 }
 .product__content:hover {
