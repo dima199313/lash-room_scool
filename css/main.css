@@ -372,6 +372,22 @@ body {
   display: block;
 }
 
+.video {
+  padding: 35px 15px;
+  margin: 0 auto;
+  max-width: 900px;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
 .services__inner {
   padding: 45px 0;
 }

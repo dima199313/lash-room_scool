@@ -1,0 +1,15 @@
+.video{
+  padding: 35px 15px;
+  margin: 0 auto;
+  max-width: 900px;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: rgb(77, 124, 165);
+}
+.video__wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: black
+}
