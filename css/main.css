@@ -269,6 +269,10 @@ body {
   gap: 40px;
 }
 
+.product__text {
+  padding: 20px 20px;
+}
+
 .product__content {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
@@ -282,10 +286,6 @@ body {
 .product__content img {
   height: 450px;
   object-fit: cover;
-}
-
-.product__text {
-  padding: 20px 20px;
 }
 
 .training-period {

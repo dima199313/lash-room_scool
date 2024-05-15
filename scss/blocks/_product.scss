@@ -22,6 +22,10 @@
 }
 .product__list-link {
 }
+.product__text {
+  padding: 20px 20px;
+}
+
 .product__content {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.4);
   transition: 0.3s;
@@ -35,11 +39,8 @@
     height: 450px;
     object-fit: cover;
   }
+  
 }
-.product__text {
-  padding: 20px 20px;
-}
-
 .training-period {
   font-family: $font-accent;
   font-size: 20px;
@@ -47,5 +48,5 @@
 .price {
   font-family: $font-accent;
   font-size: 25px;
-
 }
+
