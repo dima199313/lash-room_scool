@@ -41,3 +41,30 @@ productListItemAll.forEach(item => {
   });
 });
 
+//Появление частей сайта
+const allSections = document.querySelectorAll('.section')
+
+const appearanceSection = function(entries, observer) {
+  const entry = entries[0]
+  console.log(entry);
+  if(!entry.isIntersecting) return
+    
+    entry.target.classList.remove('section--hidden')
+    observer.unobserve(entry.target)//больше не обозревать
+  
+}
+
+const sectionObserver = new IntersectionObserver(appearanceSection,{
+ root: null,
+ threshold: 0.10,
+ rootMargin: `0px`, 
+})
+
+allSections.forEach(function(section){
+  section.classList.add('section--hidden')
+  sectionObserver.observe(section)
+})
+
+
+
+

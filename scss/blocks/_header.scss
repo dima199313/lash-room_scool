@@ -1,4 +1,5 @@
 .header__inner {
+ 
 }
 .header__top {
   // border: 1px solid green;
@@ -61,19 +62,19 @@
  
   &:hover {
     color: $telegram-color;
-    transform:scale(1.1);
+    
   }
 }
 .bi-instagram{
   &:hover {
     color: $instagram-color;
-    transform:scale(1.1);
+   
   }
 }
 .bi-youtube{
   &:hover {
     color: $youTube-color;
-    transform:scale(1.1);
+    
   }
 }
 

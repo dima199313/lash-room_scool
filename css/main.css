@@ -132,6 +132,15 @@ body {
   display: none;
 }
 
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(9rem);
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -193,17 +202,14 @@ body {
 
 .bi-telegram:hover {
   color: #269DD9;
-  transform: scale(1.1);
 }
 
 .bi-instagram:hover {
   color: #C63DC3;
-  transform: scale(1.1);
 }
 
 .bi-youtube:hover {
   color: #FF0606;
-  transform: scale(1.1);
 }
 
 .header__bottom {
