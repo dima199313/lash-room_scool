@@ -42,19 +42,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.sign-up__btn{
-  margin-top: 30px;
-  padding: 10px 15px;
-  border: 1px solid $black;
-  border-radius:10px;
-  font-family: $font-accent;
-  &:hover {
-    box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.4);
-    background-color: $hover-btn_bg;
-    font-weight: 700;
-    color:$hover-btn_text;
-  }
-}
+
 .h4-title {
 }
 .price {

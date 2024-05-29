@@ -28,10 +28,10 @@ const accContentAll = document.querySelectorAll('.accordion__content');
 productListItemAll.forEach(item => {
   item.addEventListener('click', () => {
     let currentBtn = item;
-    let tabId = Number(currentBtn.getAttribute('product-id').slice(-1));
-    accContentAll.forEach((item)=>{
-      item.classList.remove('accordion__content-show')
-    })
+    let tabId = Number(currentBtn.getAttribute('data-product').slice(-1));
+    accContentAll.forEach(item => {
+      item.classList.remove('accordion__content-show');
+    });
     accBtnAll.forEach(item => {
       item.classList.remove('accordion__btn-active');
       Number(item.getAttribute('id').slice(-1)) === tabId
@@ -41,30 +41,25 @@ productListItemAll.forEach(item => {
   });
 });
 
-//Появление частей сайта
-const allSections = document.querySelectorAll('.section')
+// Появление частей сайта
+const allSections = document.querySelectorAll('.section');
 
-const appearanceSection = function(entries, observer) {
-  const entry = entries[0]
+const appearanceSection = function (entries, observer) {
+  const entry = entries[0];
   console.log(entry);
-  if(!entry.isIntersecting) return
-    
-    entry.target.classList.remove('section--hidden')
-    observer.unobserve(entry.target)//больше не обозревать
-  
-}
+  if (!entry.isIntersecting) return;
 
-const sectionObserver = new IntersectionObserver(appearanceSection,{
- root: null,
- threshold: 0.10,
- rootMargin: `0px`, 
-})
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target); //больше не обозревать
+};
 
-allSections.forEach(function(section){
-  section.classList.add('section--hidden')
-  sectionObserver.observe(section)
-})
+const sectionObserver = new IntersectionObserver(appearanceSection, {
+  root: null,
+  threshold: 0.1,
+  rootMargin: `0px`,
+});
 
-
-
-
+allSections.forEach(function (section) {
+  section.classList.add('section--hidden');
+  sectionObserver.observe(section);
+});
