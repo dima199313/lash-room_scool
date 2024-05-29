@@ -40,9 +40,11 @@
   font-weight: 500;
   font-family: $font-secondary;
   transition: color 0.2s ease;
-
+  transition: transform 0.4s ease;
+  
   &:hover {
     color: $hover-text;
+    transform: translateX(-10%);
   }
 }
 .social__items {
@@ -52,22 +54,26 @@
 }
 .bi {
   transition: color 0.2s ease;
+  
   width: 40px;
 }
 .bi-telegram{
-  
+ 
   &:hover {
-    color: $telegram-color
+    color: $telegram-color;
+    transform:scale(1.1);
   }
 }
 .bi-instagram{
   &:hover {
     color: $instagram-color;
+    transform:scale(1.1);
   }
 }
 .bi-youtube{
   &:hover {
     color: $youTube-color;
+    transform:scale(1.1);
   }
 }
 

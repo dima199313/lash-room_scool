@@ -5,7 +5,7 @@
   // border: 1px solid green;
   display: flex;
   flex-direction:row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 15px;
   background-color: $accent-bg;
@@ -41,11 +41,13 @@
 }
 .footer__nav-item{
   margin-bottom: 10px;
+  transition: transform 0.4s ease;
   &:last-child{
     margin-bottom: 0;
   }
   &:hover {
     color: $hover-text;
+    transform: translateX(-10%);
   }
 }
 .footer__nav-link{
@@ -66,8 +68,10 @@
 .online-registration__btn {
   font-family: $font-accent;
   padding: 4px;
+  transition: transform 0.4s ease;
   &:hover{
     color:$hover-text;
+    transform: translateX(-10%);
   }
 }
 

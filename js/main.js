@@ -40,3 +40,4 @@ productListItemAll.forEach(item => {
     });
   });
 });
+
