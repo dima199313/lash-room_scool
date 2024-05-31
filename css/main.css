@@ -132,15 +132,6 @@ body {
   display: none;
 }
 
-.section {
-  transition: transform 0.5s, opacity 1s;
-}
-
-.section--hidden {
-  opacity: 0;
-  transform: translateY(9rem);
-}
-
 .header__top {
   display: flex;
   justify-content: space-between;
