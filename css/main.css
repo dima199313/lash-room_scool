@@ -129,7 +129,7 @@ body {
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 .header__top {
