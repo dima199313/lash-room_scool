@@ -1,13 +1,34 @@
-.header__inner {
- 
-}
-.header__top {
-  // border: 1px solid green;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px;
-  background-color: $accent-bg;
+.header {
+  &__top {
+    // border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: $accent-bg;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  &__img {
+    max-width: 600px;
+    margin-right: 50px;
+  }
+  &__content {
+    font-family: $font-basic;
+  }
+  &__title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 35px;
+  }
+  &__subtitle {
+    margin-bottom: 35px;
+  }
 }
 .logo {
   position: relative;
@@ -15,7 +36,6 @@
   font-size: 105px;
   font-weight: 500;
   color:$logo-color;
-
   &::after {
     content: '';
     position: absolute;
@@ -28,75 +48,175 @@
   &__top {
     margin-bottom: 15px;
   }
+
 }
-.nav__items {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px 0;
-  padding: 15px 15px;
-}
-.nav__item {
-  font-size: 30px;
-  font-weight: 500;
-  font-family: $font-secondary;
-  transition: color 0.2s ease;
-  transition: transform 0.4s ease;
-  
-  &:hover {
-    color: $hover-text;
-    transform: translateX(-10%);
+.nav {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px 0;
+    padding: 15px 15px;
+  }
+  &__item {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: $font-secondary;
+    transition: color 0.2s ease;
+    transition: transform 0.4s ease;
+    &:hover {
+      color: $hover-text;
+      transform: translateX(-10%);
+    }
+    .social {
+      display: none;
+    }
   }
 }
-.social__items {
-  display: flex;
-  flex-direction: column;
-  gap: 20px 0;
+.social {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+  }
 }
 .bi {
   transition: color 0.2s ease;
-  
   width: 40px;
 }
 .bi-telegram{
- 
   &:hover {
     color: $telegram-color;
-    
   }
 }
 .bi-instagram{
   &:hover {
     color: $instagram-color;
-   
   }
 }
 .bi-youtube{
   &:hover {
     color: $youTube-color;
-    
   }
 }
+@media (max-width:1200px) {
+  .header {
+    &__bottom {
+  
+      padding: 15px 0;
+    }
+    &__img {
+      object-fit: cover;
+      max-width: 445px;
 
-.header__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
+    }
+    &__title {
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 35px;
+    }
+    .text{
+      font-size: 18px;
+    }
+    .btn {
+      font-size: 18px;
+    }
+  }
+
 }
-.header__img {
-  max-width: 600px;
-  margin-right: 50px;
+@media (max-width:1080px){
+  .logo {
+    font-size: 35px;
+    &::after {
+      top: 50%;
+      left: 24%;
+      width: 115px;
+    }
+  }
+} 
+@media (max-width:950px){
+  .header {
+    &__bottom {
+      align-items: center;
+      justify-content: center;
+      padding: 15px 0;
+    }
+    &__img {
+      object-fit: cover;
+      max-width: 287px;
+      margin-right: 15px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items:start;
+      gap: 20px;
+    }
+    &__title {
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+    &__subtitle {
+      margin: 0;
+    }
+    
+  }
+} 
+
+@media (max-width: 650px) {
+  .header {
+    .social {
+      display: none;
+    }
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 5px 0;
+    }
+    &__img {
+      object-fit: cover;
+      max-width: 350px;
+      margin-right: 0px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items:start;
+      gap: 20px;
+      max-width: 360px;
+    }
+    &__title {
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+    &__subtitle {
+      margin: 0;
+    }
+  }
+
 }
-.header__content {
-  font-family: $font-basic;
-}
-.header__title {
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 1.1;
-  margin-bottom: 35px;
-}
-.header__subtitle {
-  margin-bottom: 35px;
-}
+@media (max-width:465px){
+  .logo {
+    font-size: 25px;
+    &::after {
+      top: 50%;
+      left: 24%;
+      width: 80px;
+    }
+  }
+  .header {
+    .social {
+      padding: 10px 0;
+      &__items {
+        flex-direction: row;
+        gap: 10px;
+      }
+      .bi {
+        width: 30px;
+      }
+    }
+  }
+} 
