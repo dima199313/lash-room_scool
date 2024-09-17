@@ -374,6 +374,10 @@ body {
   display: block;
 }
 
+.price__info {
+  margin-top: 30px;
+}
+
 .video__iframe {
   width: 100%;
   height: 100%;
@@ -590,4 +594,10 @@ body {
 
 .advertising__item span:hover {
   color: #892e3c;
+}
+
+.footer__bottom-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */
