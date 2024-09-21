@@ -1,92 +1,92 @@
-.accordion{
+.accordion {
   user-select: none;
-}
-.accordion__inner {
-}
-.accordion__btn {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: $accordion__btn-bg;
-  transition: all 0.3s ease-in;
-  font-size: 25px;
-
-}
-.accordion__title {
-}
-
-.accordion__arrow-img {
-  width: 35px;
-  transition: transform .5s;
-}
-.accordion__btn-active {
-  background-color: $accordion__btn-active;
-
-  .accordion__arrow-img {
-    transform: rotate(-180deg);
+  &__btn {
+    border-top: 1px solid #e4e3e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $accordion__btn-bg;
+    transition: all 0.3s ease-in;
+    font-size: 25px;
+    &:hover{
+      background-color: $accordion__btn-hover ;
+    }
   }
-}
-.accordion__btn:hover {
-  background-color: $accordion__btn-hover ;
-}
-.accordion__content {
-  display: none;
-  font-size: 25px;
-  padding: 25px;
-  font-family: $font-accent;
-  background-color:$accordion__content-bg;
-}
+  &__img-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+  &__arrow-img {
+    width: 100%;
+    transition: transform .5s;
+  }
 
-.accordeon__strong {
-  font-family: $font-secondary;
-}
-.accordion__h4-title{
-  // margin-top: 15px;
-}
-.h4-title{
-
-}
-.h3-title{
-}
-.accordion__h3--red{
-  color:$red;
-}
-.accordion__h4--red{
-  color:$red;
-}
-.accordion__h4--text-center{
-  text-align: center;
-}
-.accordion__h3-title{
-  text-align: center;
-  // margin:15px 15px;
-}
-.accordion__text {
-  font-size: 20px;
-  line-height: 1.9;
+  &__btn-active {
+    background-color: $accordion__btn-active;
+    .accordion__arrow-img {
+      transform: rotate(-180deg);
+    }
+  }
+  &__content {
+    display: none;
+    font-size: 25px;
+    padding: 25px 0;
+    font-family: $font-accent;
+    background-color:$accordion__content-bg;
+  }
+  &__strong {
+    font-family: $font-accent;
+  }
+  &__h3--red {
+    color:$red;
+  }
+  &__h4--red {
+    color:$red;
+  }
+  &__h4--text-center {
+    text-align: center;
+  }
+  &__h3-title {
+    text-align: center;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 8px;
+  }
+  &__content-show {
+    display: block;
+  }
 }
 
 .сourse-program {
-  padding: 20px 0;
-}
-.course-proglam__list {
+  // padding: 20px 0;
 }
 .course-program__step {
+  padding-left: 25px;
   list-style: circle;
-}
-.course-program__step-list {
- 
-}
-.accordion__content-show {
-  display: block;
 }
 .price__info{
   margin-top: 30px;
 }
 
-// 
-
-
-
-
-
+@media (max-width:700px) {
+  .h4-title {
+    font-size: 18px;
+  }
+  .h3-title {
+    font-size: 20px;
+  }
+  .accordion {
+    &__text {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    &__title {
+      font-size: 18px;
+      margin: 0;
+      max-width: 250px;
+    }
+  }
+}
