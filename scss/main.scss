@@ -1,5 +1,7 @@
 
 @import './libs/bootstrap-reboot.min';
+@import './libs/slick';
+// @import './libs/slick-theme';
 @import './base/reset';
 @import './base/vars';
 @import './base/base';
@@ -11,5 +13,6 @@
 @import './blocks/accordion';
 @import './blocks/video';
 @import './blocks/services';
+@import './blocks/credit';
 @import './blocks/location';
 @import './blocks/footer';

@@ -42,13 +42,27 @@ productListItemAll.forEach(item => {
 });
 
 //navigation
-const burger = document.querySelector('.burger')
-const nav = document.querySelector('.nav')
-burger.addEventListener('click',()=>{
-  burger.classList.toggle('active')
-  nav.classList.toggle('open')
-})
-nav.addEventListener('click', ()=>{
-  burger.classList.toggle('active')
-  nav.classList.toggle('open')
-})
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  nav.classList.toggle('open');
+});
+nav.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  nav.classList.toggle('open');
+});
+
+//credit-slider
+$(document).ready(function () {
+  $('.credit__slider').slick({
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 9000,
+    // slidesToScroll: 1,
+    prevArrow: "<img src='../images/icon/arrow-left-circle-fill.svg' class='prev' style='display: block' alt='1'>",
+    nextArrow: "<img src='../images/icon/arrow-right-circle-fill.svg' class='next' alt='2'>",
+    // setting-name: setting-value
+  });
+});

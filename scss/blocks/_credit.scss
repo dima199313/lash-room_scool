@@ -1,0 +1,46 @@
+.credit {
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
+  background-color: #0B5AA7;
+  &__inner {
+    padding-top: 50px;
+    display: flex;
+
+    // justify-content: space-between;
+  }
+  &__h3-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $white;
+    text-align: center;
+  }
+  &__h4-title{
+    background-color:#E1200F;
+    color: $white;
+  }
+  &__text {
+    color: $white;
+  }
+  &__slider-wrapper {
+
+    width: 480px;
+    &__slider {
+      position: relative;
+    }
+  }
+  &__img {
+    height: 680px;
+    object-fit: cover;
+  }
+}
+.prev {
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  z-index: 2;
+}
+.next {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+}
