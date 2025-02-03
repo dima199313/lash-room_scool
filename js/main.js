@@ -62,7 +62,18 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     slidesToScroll: 1,
     prevArrow: '<button class="slick-prev"  type="button"></button>',
-    nextArrow: '<button class="slick-next"  type="button"></button>'
+    nextArrow: '<button class="slick-next"  type="button"></button>',
+    responsive: [
+      {
+        breakpoint: 899,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          // slidesToShow: 3
+        }
+      },
+    ]
     // setting-name: setting-value
   });
 });
