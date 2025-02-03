@@ -1,11 +1,47 @@
 .credit {
-  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
-  background-color: #0B5AA7;
   &__inner {
     padding-top: 50px;
     display: flex;
+    gap: 20px;
 
     // justify-content: space-between;
+  }
+  &__slider-wrapper {
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 97%);
+    background-color: #0b5aa7;
+
+    width: 100%;
+    &__slider {
+      position: relative;
+    }
+  }
+  .slick-prev {
+    width: 130px;
+    &:before {
+      content: url('../images/icon/chevron-compact-left.svg');
+      width: 100%;
+
+    }
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    z-index: 2;
+  }
+  .slick-next {
+    width: 130px;
+    &:before {
+      width: 100%;
+      content: url('../images/icon/chevron-compact-right.svg'); 
+    }
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    z-index: 3;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   }
   &__h3-title {
     text-transform: uppercase;
@@ -13,34 +49,49 @@
     color: $white;
     text-align: center;
   }
-  &__h4-title{
-    background-color:#E1200F;
+  &__h4-title {
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    // background-color:#E1200F;
     color: $white;
-  }
-  &__text {
-    color: $white;
-  }
-  &__slider-wrapper {
-
-    width: 480px;
-    &__slider {
-      position: relative;
+    span {
+      clip-path: polygon(5% 1%, 100% 0%, 95% 100%, 0% 100%);
+      background-color:#e1200f;
+      padding: 0 30px;
     }
   }
+  &__text {
+    margin-top: 50px;
+    width: 400px;
+    color: $white;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  &__btn {
+    transition: 0.1s ease-in;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.4);
+    &:hover {
+      box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.4);
+      background-color: #e1200f;
+      color: $white;
+    }
+    background-color: #ffffff;
+    padding: 8px 30px;
+  }
+  &__link {
+    transition: 0.1s ease-in;
+    &:hover {
+      color: $white;
+    }
+  }
+
   &__img {
     height: 680px;
     object-fit: cover;
   }
-}
-.prev {
-  position: absolute;
-  right: 50px;
-  bottom: 10px;
-  z-index: 2;
-}
-.next {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  z-index: 2;
 }

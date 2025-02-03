@@ -59,10 +59,10 @@ $(document).ready(function () {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 9000,
-    // slidesToScroll: 1,
-    prevArrow: "<img src='../images/icon/arrow-left-circle-fill.svg' class='prev' style='display: block' alt='1'>",
-    nextArrow: "<img src='../images/icon/arrow-right-circle-fill.svg' class='next' alt='2'>",
+    autoplaySpeed: 5000,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-prev"  type="button"></button>',
+    nextArrow: '<button class="slick-next"  type="button"></button>'
     // setting-name: setting-value
   });
 });

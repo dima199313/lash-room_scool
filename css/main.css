@@ -1078,14 +1078,46 @@ body {
     height: 150px;
   }
 }
-.credit {
-  -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
-          clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
-  background-color: #0B5AA7;
-}
 .credit__inner {
   padding-top: 50px;
   display: flex;
+  gap: 20px;
+}
+.credit__slider-wrapper {
+  -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 97%);
+          clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 97%);
+  background-color: #0b5aa7;
+  width: 100%;
+}
+.credit__slider-wrapper__slider {
+  position: relative;
+}
+.credit .slick-prev {
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  z-index: 2;
+}
+.credit .slick-prev:before {
+  content: url("../images/icon/chevron-compact-left.svg");
+  width: 100%;
+}
+.credit .slick-next {
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  z-index: 3;
+}
+.credit .slick-next:before {
+  width: 100%;
+  content: url("../images/icon/chevron-compact-right.svg");
+}
+.credit__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 .credit__h3-title {
   text-transform: uppercase;
@@ -1094,36 +1126,49 @@ body {
   text-align: center;
 }
 .credit__h4-title {
-  background-color: #E1200F;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
   color: #ffffff;
+}
+.credit__h4-title span {
+  -webkit-clip-path: polygon(5% 1%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 1%, 100% 0%, 95% 100%, 0% 100%);
+  background-color: #e1200f;
+  padding: 0 30px;
 }
 .credit__text {
+  margin-top: 50px;
+  width: 400px;
   color: #ffffff;
 }
-.credit__slider-wrapper {
-  width: 480px;
+.credit__links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
 }
-.credit__slider-wrapper__slider {
-  position: relative;
+.credit__btn {
+  transition: 0.1s ease-in;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+  padding: 8px 30px;
+}
+.credit__btn:hover {
+  box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #e1200f;
+  color: #ffffff;
+}
+.credit__link {
+  transition: 0.1s ease-in;
+}
+.credit__link:hover {
+  color: #ffffff;
 }
 .credit__img {
   height: 680px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.prev {
-  position: absolute;
-  right: 50px;
-  bottom: 10px;
-  z-index: 2;
-}
-
-.next {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  z-index: 2;
 }
 
 .location .social__items {
